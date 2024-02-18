@@ -8,20 +8,20 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: '游戏存档管理器',
+  tagline: '一个简单易用的开源存档管理工具，兼具云同步功能',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://help.sworld.club',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Sworld', // Usually your GitHub org/user name.
+  projectName: 'Game save manager', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -30,8 +30,8 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh-CN',
+    locales: ['zh-CN'],
   },
 
   presets: [
@@ -44,14 +44,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/mcthesw/doc-game-save-manager/blob/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/mcthesw/doc-game-save-manager/blob/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -66,7 +66,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: '存档管理器',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -76,12 +76,17 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: '帮助文档',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: '更新日志', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: 'https://github.com/mcthesw/game-save-manager',
+            label: '软件GitHub',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/mcthesw/doc-game-save-manager',
+            label: '文档GitHub',
             position: 'right',
           },
         ],
@@ -90,46 +95,54 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: '文档',
             items: [
               {
-                label: 'Tutorial',
+                label: '使用文档',
                 to: '/docs/intro',
               },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
               {
-                label: 'Stack Overflow',
+                label: '开发文档',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
+            ],
+          },
+          {
+            title: '社区',
+            items: [
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: '软件主页',
+                href: 'https://game.sworld.club',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: '讨论区',
+                href: 'https://github.com/mcthesw/game-save-manager/discussions',
+              },
+              {
+                label: 'Bilibili账号',
+                href: 'https://space.bilibili.com/4087637',
               },
             ],
           },
           {
-            title: 'More',
+            title: '源代码',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: '软件源代码',
+                href: 'https://github.com/mcthesw/game-save-manager',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: '文档源代码',
+                href: 'https://github.com/mcthesw/doc-game-save-manager',
+              },
+              {
+                label: '主页源代码',
+                href: 'https://github.com/mcthesw/hello-gsm',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `存档管理器是由 Sworld 和其它贡献者们共同开发的开源软件，服务于广大游戏玩家`,
       },
       prism: {
         theme: prismThemes.github,
