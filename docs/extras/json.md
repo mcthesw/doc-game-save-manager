@@ -30,6 +30,7 @@
     "cloud_settings": { // 云同步的设置
       "always_sync": true, // 随时同步
       "auto_sync_interval": 0, // 自动同步的间隔，暂不可用
+      "root_path": "/game-save-manager", // 云端的根路径
       "backend": { // 云同步后端的设置
         "type": "WebDAV",
         "endpoint": "https://XXXXX/dav",
