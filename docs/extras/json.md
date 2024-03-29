@@ -11,11 +11,13 @@
       "save_paths": [ // 存放当前游戏所有存档文件/文件夹的路径
         {
           "unit_type": "Folder", // 存档的类型，文件夹或文件
-          "path": "X:\\Tests\\存档案例1 - 复制\\文件夹案例1（空文件夹）" // 存档的路径
+          "path": "X:\\Tests\\存档案例1 - 复制\\文件夹案例1（空文件夹）", // 存档的路径
+          "delete_before_apply": false // 应用存档时是否删除原存档
         },
         {
           "unit_type": "File",
-          "path": "X:\\Tests\\存档案例1\\文件图片1.jpg"
+          "path": "X:\\Tests\\存档案例1\\文件图片1.jpg",
+          "delete_before_apply": false
         }
       ],
       "game_path": "" // 游戏的启动路径
