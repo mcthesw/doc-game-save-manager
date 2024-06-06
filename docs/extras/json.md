@@ -38,8 +38,20 @@
         "endpoint": "https://XXXXX/dav",
         "username": "XXXX@XX.com",
         "password": "XXXXX"
-      }
-    }
+      },
+    "locale": "zh_SIMPLIFIED", // 语言信息
+    "default_delete_before_apply": true, // 新添加的游戏是否先删除存档再应用
+    "default_expend_favorites_tree": true, // 是否默认展开收藏树
+    "home_page": "/management/test单文件" // 默认主页路径
+    },
+    "favorites": [ // 收藏夹树
+      {
+        "node_id": "e8dfbdb2-421a-4835-a40d-f5652f24a629", // 节点ID，使用UUID4
+        "label": "test", // 游戏名，用于router导航
+        "is_leaf": true, // true代表是游戏，false代表是文件夹
+        "children": null // 下方可以嵌套自己一样的结构，类型为 Array<FavoriteNode>?
+      },
+    ]
   }
 }
 ```
