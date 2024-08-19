@@ -1,9 +1,10 @@
 # Json文件说明
 
 ## GameSaveManager.config.json
+
 ```json5
 {
-  "version": "1.0.0", // 配置文件的版本
+  "version": "1.3.0", // 配置文件的版本
   "backup_path": "./save_data", // 备份文件存放路径，暂时不可变，不要更改
   "games": [ // 存放所有游戏的数组
     {
@@ -42,7 +43,8 @@
     "locale": "zh_SIMPLIFIED", // 语言信息
     "default_delete_before_apply": true, // 新添加的游戏是否先删除存档再应用
     "default_expend_favorites_tree": true, // 是否默认展开收藏树
-    "home_page": "/management/test单文件" // 默认主页路径
+    "home_page": "/management/test单文件", // 默认主页路径
+    "log_to_file": false // 日志是否记录到文件
     },
     "favorites": [ // 收藏夹树
       {
