@@ -44,7 +44,8 @@
     "default_delete_before_apply": true, // 新添加的游戏是否先删除存档再应用
     "default_expend_favorites_tree": true, // 是否默认展开收藏树
     "home_page": "/management/test单文件", // 默认主页路径
-    "log_to_file": false // 日志是否记录到文件
+    "log_to_file": false, // 日志是否记录到文件
+    "add_new_to_favorites": false // 是否把新加入的游戏添加到收藏夹内
     },
     "favorites": [ // 收藏夹树
       {
@@ -59,6 +60,7 @@
 ```
 
 ## save_data/游戏名/Backups.json
+
 ```json5
 {
   "name": "测试游戏", // 游戏名
