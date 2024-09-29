@@ -54,7 +54,24 @@
         "is_leaf": true, // true代表是游戏，false代表是文件夹
         "children": null // 下方可以嵌套自己一样的结构，类型为 Array<FavoriteNode>?
       },
-    ]
+    ],
+    "quick_action": { // 快捷备份相关操作
+      "quick_action_game": { // 快捷备份对应的游戏
+        "name": "测试游戏",
+        "save_paths": [
+          {
+            "unit_type": "Folder",
+            "path": "D:\\Coding\\Tests",
+            "delete_before_apply": false
+          }
+        ],
+        "game_path": "D:\\Coding\\Tests\\存档案例1\\文件图片1.jpg"
+      },
+      "hotkeys": { // 快捷键
+        "apply": ["CONTROL","ALT","1"],
+        "backup": ["","","F13"]
+      }
+    }
   }
 }
 ```
